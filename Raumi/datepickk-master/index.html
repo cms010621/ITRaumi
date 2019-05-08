@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Datepickk - Documentation</title>
+	<link rel="stylesheet" href="dist/doc.css">
+	<link rel="stylesheet" href="dist/datepickk.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/styles/zenburn.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,600" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.7/highlight.min.js"></script>
+</head>
+<body>
+	<script src="dist/datepickk.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script>
+	
+
+	<div class="container">
+		<div class="row align-center equal-height" style="margin-bottom:50px;"></div>
+		
+			
+			<div class="col-xs-12 col-md-6 align-center" >
+				<div id="demoPicker" style="height:600px;width:100%;max-width: 600px;"></div>
+				<script>
+					var now = new Date();
+					var demoPicker = new Datepickk({
+						container: document.querySelector('#demoPicker'),
+						inline:true,
+						range: true,
+						tooltips: {
+							date: new Date(),
+							text: 'Tooltip'
+						},
+						highlight:{
+							start: new Date(now.getFullYear(),now.getMonth(),3),
+							end: new Date(now.getFullYear(),now.getMonth(),6),
+							backgroundColor:'#05676E',
+							color:'#fff',
+							legend: 'Highlight'
+						}
+					});
+				</script>
+			</div>
+		</div>
+
+		
+	
+
+	</div>
+	<script src="docs/demo.js"></script>
+	<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+</body>
+</html>

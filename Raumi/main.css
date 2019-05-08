@@ -1,0 +1,51 @@
+        .container {
+            border: solid sienna;
+        }
+
+        .menuline {
+            background: hotpink;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: fixed;
+            width: 100%;
+        }
+
+        .menuline>li {
+            display: inline-block;
+        }
+
+        .menuline>li>a {
+            display: block;
+            text-decoration: none;
+            padding: 10px 20px;
+            color: white;
+        }
+
+        .menuline>li>a:hover {
+            background: deeppink;
+        }
+
+        header {
+            border: solid salmon;
+            height: 150px;
+        }
+
+        section {
+            border: solid slateblue;
+            height: 300px;
+            /* float: left; */
+            box-sizing: border-box;
+        }
+        #section1 {
+            border: solid slateblue;
+            height: 1200px;
+            box-sizing: border-box;
+        }
+
+        footer {
+            border: solid sandybrown;
+            height: 150px;
+            float: unset;
+            clear: left;
+        }
